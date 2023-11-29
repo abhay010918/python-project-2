@@ -1,0 +1,29 @@
+# write a code for greeting
+
+print("Welcome to the rolercoster")
+
+# write a height code for condition
+
+height = int(input("what is your hight in cm? "))
+
+# now ritght the condition for the code
+
+if height >= 120:
+
+    print("Yes you are eligible for the ride")
+
+    # writeing a new condition
+
+    age = int(input("what is your age? "))
+    if age < 12:
+        print("You have to pay 10$")
+    elif age <= 18:
+        print("You have to pay 20$")
+    else:
+        print("you have to pay 30$")
+
+else:
+
+    print("You are not eligible for the ride")
+
+print("wooow abhay you have done your day 3 first project")

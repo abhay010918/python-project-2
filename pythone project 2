@@ -5,6 +5,7 @@ print("Welcome to the rolercoster")
 # write a height code for condition
 
 height = int(input("what is your hight in cm? "))
+bill = 0
 
 # now ritght the condition for the code
 
@@ -16,14 +17,21 @@ if height >= 120:
 
     age = int(input("what is your age? "))
     if age < 12:
+        bill = 10
         print("You have to pay 10$")
     elif age <= 18:
+        bill = 20
         print("You have to pay 20$")
     else:
+        bill = 30
         print("you have to pay 30$")
 
+    for_photo = input("Do you want photo Y or N.")
+    if for_photo == "Y":
+        print("You have to pay $3 for photos")
+        bill = bill + 3
+    print(f"Your total bill is ${bill}")
 else:
+    print(" You are not eligible for the ride")
 
-    print("You are not eligible for the ride")
-
-print("wooow abhay you have done your day 3 first project")
+print("wooow abhay you have done your challenge ")
